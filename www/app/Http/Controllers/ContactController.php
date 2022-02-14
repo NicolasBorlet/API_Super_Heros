@@ -19,7 +19,7 @@ class ContactController extends Controller
     }
 
     public function form(Request $request) {
-        dd($request->firstname);
+        dd($request->heroes_one);
     }
 
 }
