@@ -14,8 +14,9 @@ class HeroController extends Controller
 
         $response = Http::get('https://superheroapi.com/api/291843323012035/'.$id);
         $data = $response->json();
+        //$name = ($data[name]);
         dd($data);
 
-        echo('Hero #'.$id);
+
     }
 }
