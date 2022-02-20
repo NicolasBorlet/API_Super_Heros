@@ -15,11 +15,14 @@ class HomeController extends Controller
 
         $response = Http::get('https://superheroapi.com/api/291843323012035/'.$id);
         $heroes = $response->json();
+
         return view('home',[
             'title' => $title,
-            'heroes' => $heroes['name']
+            'heroes' => $heroes,
+            'image' => $heroes['image'],
             ]);
     }
+
 
     public function form (Request $request){
         $hero_name = ($request->hero_name);
@@ -28,8 +31,9 @@ class HomeController extends Controller
         $response = Http::get('https://superheroapi.com/api/291843323012035/1');
         $heroes = $response->json();
 
-        return view ('Hero',[
-           'heroes'=>$heroes['result']
+        return view (
+            'hero',[
+           'heroes'=>$heroes['result'],
         ]);
     }
 
