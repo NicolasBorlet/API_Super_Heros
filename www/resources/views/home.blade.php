@@ -18,7 +18,9 @@
 
 @foreach ((array)$heroes as $hero)
     <div class="list_hero">
-        <p>{{$hero}}</p>
+        <p>Héro numéro {{$heroes['id']}} :</p>
+        <p>{{$heroes['name']}}</p>
+        <a href=""><img src="{{$image['url']}}" alt="image"></a>
     </div>
 @endforeach
 
