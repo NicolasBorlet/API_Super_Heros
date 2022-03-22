@@ -21,4 +21,4 @@ Route::get('/', function () {
 //Route::post('/form-contact', [App\Http\Controllers\ContactController::class,'form'])->name('contact.form');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.form');
-Route::get('/heroes/{id}', [App\Http\Controllers\HeroController::class,'index'])->name('hero.index');
+Route::get('/home/market', [App\Http\Controllers\ExchangeController::class,'index'])->name('exchange.index');
