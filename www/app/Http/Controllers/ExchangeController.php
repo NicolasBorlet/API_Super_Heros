@@ -15,8 +15,8 @@ class ExchangeController extends Controller
         $response = Http::get('https://api.coinlore.net/api/exchanges/');
         $exchanges = $response->json();
 
-        return view('Exchange',[
-            'exchanges' => $exchanges['results']
+        return view('pages/exchange',[
+            'exchanges' => $exchanges
             ]);
     }
 }

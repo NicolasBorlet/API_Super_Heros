@@ -22,3 +22,4 @@ Route::get('/', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home.form');
 Route::get('/home/market', [App\Http\Controllers\ExchangeController::class,'index'])->name('exchange.index');
+Route::get('/home/crypto', [App\Http\Controllers\CryptoController::class, 'index'])->name('crypto.index');

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body{
+    margin: 0;
+    font-family: Krona One, sans-serif;
+    background: linear-gradient(180deg, #E7E6FC 0%, #E2E1FD 100%);
+
+    main{
+        margin: 50px 50px 0 50px;
+
+        .main_menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                background: #575AC2;
+                border-radius: 16px;
+                width: 150px;
+                height: 65px;
+            }
+        }
+
+        .list_cryptos{
+            display: flex;
+            background: #ECEBFE;
+            border-radius: 30px;
+            justify-content: space-between;
+            padding: 10px;
+            margin-top: 50px;
+            cursor: pointer;
+            transition: 0.4s;
+
+            p{
+                width: 14%;
+                text-align: center;
+            }
+        }
+
+        .list_cryptos:hover{
+            filter: drop-shadow(0px 9px 20px rgba(31, 39, 129, 0.22));
+            transition: 0.4s;
+        }
+    }
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #E7E6FC 0%, #E2E1FD 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #575AC2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #404297;
+}

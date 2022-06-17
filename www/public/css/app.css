@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css2?family=Krona+One&display=swap);
+header {
+  padding: 10px 50px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_tittle form input {
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  background: inherit;
+  font-family: Krona One, sans-serif;
+}
+header .form {
+  width: 57%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .form form {
+  float: right;
+}
+header .form form input.txt {
+  width: 200px;
+  height: 65px;
+  border-radius: 16px;
+  background: #ECEBFE;
+  border: solid 1px #575AC2;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+header .form form input.button {
+  margin-left: 10px;
+  cursor: pointer;
+  background: #575AC2;
+  border-radius: 60px;
+  width: 65px;
+  height: 65px;
+  color: #fff;
+  border: none;
+  transition: 0.4s;
+  font-weight: 600;
+}
+header .form form input.button:hover {
+  background: #404297;
+  filter: drop-shadow(0px 9px 20px rgba(31, 39, 129, 0.22));
+  transition: 0.4s;
+}
+header .form form input.market {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #575AC2;
+  border-radius: 16px;
+  width: 150px;
+  height: 65px;
+  border: none;
+  font-family: Krona One, sans-serif;
+  transition: 0.4s;
+}
+header .form form input.market:hover {
+  background: #404297;
+  filter: drop-shadow(0px 9px 20px rgba(31, 39, 129, 0.22));
+  transition: 0.4s;
+}
+
+body main .title {
+  text-align: center;
+}
+body main .list_exchange {
+  display: flex;
+  background: #ECEBFE;
+  border-radius: 30px;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 50px;
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  font-family: Krona One, sans-serif;
+  background: linear-gradient(180deg, #E7E6FC 0%, #E2E1FD 100%);
+}
+body main {
+  margin: 50px 50px 0 50px;
+}
+body main .main_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body main .main_menu p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #575AC2;
+  border-radius: 16px;
+  width: 150px;
+  height: 65px;
+}
+body main .list_cryptos {
+  display: flex;
+  background: #ECEBFE;
+  border-radius: 30px;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main .list_cryptos p {
+  width: 14%;
+  text-align: center;
+}
+body main .list_cryptos:hover {
+  filter: drop-shadow(0px 9px 20px rgba(31, 39, 129, 0.22));
+  transition: 0.4s;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #E7E6FC 0%, #E2E1FD 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575AC2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #404297;
+}
